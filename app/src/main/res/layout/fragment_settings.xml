@@ -1,0 +1,14 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:layout_margin="20dp"
+    tools:context="com.phobetor.promad.Settings">
+
+    <TextView
+        android:text="Speech Rate"
+        android:textSize="20sp"
+        />
+
+</GridLayout>

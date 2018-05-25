@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.phobetor.promad.TextLoaded">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fileText"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </ScrollView>
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="LOAD FILE TO AUDIO ENGINE"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_file_upload_black_24dp"
+            android:onClick="loadClicked"/>
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="Play"
+            android:enabled="true"
+            android:src="@drawable/ic_play_circle_filled_black_24dp"
+            android:layout_centerInParent="true"
+            android:onClick="playClicked"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/playButton"
+            android:layout_centerVertical="true"
+            android:id="@+id/forwardButton"
+            android:text="Forward"
+            android:src="@drawable/ic_fast_forward_black_24dp"
+            android:onClick="forwardButtonClicked"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/playButton"
+            android:id="@+id/backwardButton"
+            android:text="backward"
+            android:onClick="backwardButtonClicked"
+            android:src="@drawable/ic_fast_rewind_black_24dp"
+            />
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/playButton"
+        android:onClick="pausePressed"
+        android:src="@drawable/ic_pause_circle_filled_black_24dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
